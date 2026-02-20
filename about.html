@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iTech Industries LTD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- nav bar start -->
+    <!-- nav bar start -->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">iTech Industries LTD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="services-link" class="nav-link dropdown-toggle" href="services.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" id="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html">Web Design</a></li>
+                            <li><a class="dropdown-item" href="services.html">Web Development</a></li>
+                            <li><a class="dropdown-item" href="services.html">App Development</a></li>
+                            <li><a class="dropdown-item" href="services.html">Graphics Design</a></li>
+                            <li><a class="dropdown-item" href="services.html">SEO Optimization</a></li>
+                            <li><a class="dropdown-item" href="services.html">Digital Marketing</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li><a class="dropdown-item" href="#">Write Some Thing About Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 bg-white text-dark" type="search" placeholder="Search"
+                        aria-label="Search" />
+                    <button class="btn btn-success mx-2" type="submit">Search</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">
+                        Login
+                    </button>
+                    <button type="button" class="btn btn-warning mx-2 w-100" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">
+                        Sign Up
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- nav bar end -->
+
+    <!-- modal start -->
+
+
+    <!-- Modal 1-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                </div>
+                <hr>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal2 -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                    </form>
+
+                </div>
+                <hr>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Sign Up</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- modal end -->
+    <!-- nav bar end -->
+
+    <!-- About Us start -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold text-success mb-4">About iTech Industries LTD</h2>
+                    <p class="lead mb-4">We are a leading technology firm dedicated to providing innovative digital
+                        solutions for businesses worldwide.</p>
+                    <p class="text-muted mb-4">Founded with a vision to bridge the gap between complex technology and
+                        business needs, iTech Industries LTD offers a comprehensive suite of services including Web
+                        Development, App Development, and SEO Optimization. Our mission is to empower our clients
+                        through scalable, efficient, and modern tech stacks.</p>
+                    <div class="row g-4">
+                        <div class="col-sm-6">
+                            <div class="p-3 border-start border-success border-4 bg-light">
+                                <h5 class="fw-bold">Our Mission</h5>
+                                <p class="small mb-0 text-muted">To drive digital transformation through excellence and
+                                    innovation.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="p-3 border-start border-success border-4 bg-light">
+                                <h5 class="fw-bold">Our Vision</h5>
+                                <p class="small mb-0 text-muted">To be the global leader in providing sustainable tech
+                                    solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+                        alt="About iTech" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About us end -->
+
+
+    <!-- footer start -->
+    <footer class="bg-dark text-light pt-5 pb-4" data-bs-theme="dark">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-success">iTech Industries LTD</h5>
+                    <p>We are a team of world-class creators, performance-marketers, and growth engineers who have been
+                        highly rated throughout the globe.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-success">Services</h5>
+                    <p><a href="#" class="text-light" style="text-decoration: none;">Web Design</a></p>
+                    <p><a href="#" class="text-light" style="text-decoration: none;">App Development</a></p>
+                    <p><a href="#" class="text-light" style="text-decoration: none;">SEO Optimization</a></p>
+                    <p><a href="#" class="text-light" style="text-decoration: none;">Digital Marketing</a></p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-success">Useful links</h5>
+                    <p><a href="#" class="text-light" style="text-decoration: none;">Home</a></p>
+                    <p><a href="#" class="text-light" style="text-decoration: none;">About Us</a></p>
+                    <p><a href="#" class="text-light" style="text-decoration: none;">Contact Us</a></p>
+                    <p><a href="#" class="text-light" style="text-decoration: none;">Help</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-success">Contact</h5>
+                    <p><i class="fas fa-home mr-3"></i> London, UK</p>
+                    <p><i class="fas fa-envelope mr-3"></i> info@itechindustries.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> +44 1234 567890</p>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p>© 2026 Copyright: <a href="#" style="text-decoration: none;"><strong class="text-success">iTech
+                                Industries LTD</strong></a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

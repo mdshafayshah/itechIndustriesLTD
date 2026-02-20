@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iTech Industries LTD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- nav bar start -->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">iTech Industries LTD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a id="services-link" class="nav-link dropdown-toggle" href="services.html" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" id="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html">Web Design</a></li>
+                            <li><a class="dropdown-item" href="services.html">Web Development</a></li>
+                            <li><a class="dropdown-item" href="services.html">App Development</a></li>
+                            <li><a class="dropdown-item" href="services.html">Graphics Design</a></li>
+                            <li><a class="dropdown-item" href="services.html">SEO Optimization</a></li>
+                            <li><a class="dropdown-item" href="services.html">Digital Marketing</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+
+                            <li><a class="dropdown-item" href="#">Write Some Thing About Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2 bg-white text-dark" type="search" placeholder="Search"
+                        aria-label="Search" />
+                    <button class="btn btn-success mx-2" type="submit">Search</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">
+                        Login
+                    </button>
+                    <button type="button" class="btn btn-warning mx-2 w-100" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">
+                        Sign Up
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- nav bar end -->
+
+    <!-- modal start -->
+
+
+    <!-- Modal 1-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                </div>
+                <hr>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal2 -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                    </form>
+
+                </div>
+                <hr>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Sign Up</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- modal end -->
+    <!-- nav bar end -->
+
+    <!-- Contact us  start -->
+    <div class="py-5 text-center container"> <img class="image-fluid" src="img/contact.png" alt="" height="300px"
+            width="200px">
+        <h1 class="h2">Contact Us For The Best Design</h1>
+        <p class="lead">
+            Get in touch with us today to kickstart your digital journey. Whether you need a high-performance Website, a
+            feature-rich Mobile App, top-tier SEO rankings, or a results-driven Digital Marketing campaign, our expert
+            team is ready
+            to deliver.
+            We pride ourselves on providing premium, agency-standard work at a price that fits your budget. We don't
+            just build
+            tools; we build growth engines designed to increase your revenue without overcharging you.</p>
+    </div>
+    <div class="container border border-dark rounded-3 p-3 mt-5 mb-5">
+        <!-- Container -->
+        <h2>Contact Us For The Services</h2>
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <label for="name">First Name : </label>
+                <input type="text" class="form-control mt-1" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col-md-6">
+                <label for="name">Last Name : </label>
+                <input type="text" class="form-control mt-1" placeholder="Last name" aria-label="Last name">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <label for="name">Email : </label>
+                <input type="text" class="form-control mt-1" placeholder="Email" aria-label="Email">
+            </div>
+            <div class="col-md-6">
+                <label for="name">Phone : </label>
+                <input type="text" class="form-control mt-1" placeholder="Phone" aria-label="Phone">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <label for="message">Select For The Query : </label>
+
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-2">
+                <input type="checkbox" class="btn-check" id="Web1" autocomplete="off">
+                <label class="btn btn-outline-primary" for="Web1">Web Designing</label>
+            </div>
+            <div class="col-md-2">
+                <input class="btn-check" type="checkbox" id="Web2" autocomplete="off">
+                <label class="btn btn-outline-primary" for="Web2">Web Development</label>
+            </div>
+            <div class="col-md-2">
+                <input class="btn-check" type="checkbox" id="App1" autocomplete="off">
+                <label class="btn btn-outline-primary" for="App1">App Development</label>
+            </div>
+            <div class="col-md-2">
+                <input class="btn-check" type="checkbox" id="Graphic1" autocomplete="off">
+                <label class="btn btn-outline-primary" for="Graphic1">Graphic Designing</label>
+            </div>
+            <div class="col-md-2">
+                <input class="btn-check" type="checkbox" id="Digital1" autocomplete="off">
+                <label class="btn btn-outline-primary" for="Digital1">Digital Marketing</label>
+            </div>
+            <div class="col-md-2">
+                <input class="btn-check" type="checkbox" id="SEO1" autocomplete="off">
+                <label class="btn btn-outline-primary" for="SEO1">SEO</label>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <label for="name">Messages : </label>
+
+            </div>
+            <div class="col-md-12">
+                <textarea class="form-control" placeholder="Leave a comment here" rows="5"
+                    id="floatingTextarea"></textarea>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-6 d-grid gap-5">
+                <button type="button" class="btn btn-success">Send Message</button>
+            </div>
+            <div class="col-md-6 d-grid gap-5">
+                <button type="button" class="btn btn-danger">Reset</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Contact Us end -->
+
+
+    <!-- footer start -->
+    <footer class="bg-dark text-light pt-5 pb-4" data-bs-theme="dark">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-success">iTech Industries LTD</h5>
+                    <p>We are a team of world-class creators, performance-marketers, and growth engineers who have been
+                        highly rated throughout the globe.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-success">Services</h5>
+                    <p><a href="#" class="text-light" style="text-decoration: none;">Web Design</a></p>
+                    <p><a href="#" class="text-light" style="text-decoration: none;">App Development</a></p>
+                    <p><a href="#" class="text-light" style="text-decoration: none;">SEO Optimization</a></p>
+                    <p><a href="#" class="text-light" style="text-decoration: none;">Digital Marketing</a></p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-success">Useful links</h5>
+                    <p><a href="#" class="text-light" style="text-decoration: none;">Home</a></p>
+                    <p><a href="#" class="text-light" style="text-decoration: none;">About Us</a></p>
+                    <p><a href="#" class="text-light" style="text-decoration: none;">Contact Us</a></p>
+                    <p><a href="#" class="text-light" style="text-decoration: none;">Help</a></p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-success">Contact</h5>
+                    <p><i class="fas fa-home mr-3"></i> London, UK</p>
+                    <p><i class="fas fa-envelope mr-3"></i> info@itechindustries.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> +44 1234 567890</p>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                    <p>© 2026 Copyright: <a href="#" style="text-decoration: none;"><strong class="text-success">iTech
+                                Industries LTD</strong></a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
